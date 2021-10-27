@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+html {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  background: white;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+html body {
+  width: 375px;
+  height: 1131px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b068e9), to(#6463e7));
+  background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+html body main.main-card {
+  width: 327px;
+  height: 768px;
+  background: white;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body main.main-card .img-card {
+  display: block;
+  position: relative;
+  top: -120px;
+  background: center/contain no-repeat url(/images/illustration-woman-online-mobile.svg);
+  width: 240px;
+  height: 145px;
+}
+
+html body main.main-card .img-card:after {
+  display: block;
+  position: absolute;
+  content: "";
+  background: center/contain no-repeat url(/images/bg-pattern-mobile.svg);
+  width: 237px;
+  height: 180px;
+  top: 30px;
+}
+
+html body main.main-card .text-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 279px;
+  height: auto;
+}
+
+html body main.main-card .text-card h1 {
+  margin: 0;
+  width: 67px;
+  height: 32px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32.19px;
+}
+
+html body main.main-card .text-card .accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html body main.main-card .text-card .accordion .question-faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 279px;
+  height: auto;
+  border-bottom: #e8e8ea 2px solid;
+}
+
+html body main.main-card .text-card .accordion .question-faq p.question {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13.08px;
+  color: #4b4c5f;
+}
+
+html body main.main-card .text-card .accordion .question-faq img {
+  width: 8px;
+  height: 4px;
+}
+
+html body main.main-card .text-card .accordion p.reponse-faq {
+  width: 279px;
+  height: auto;
+  color: #787887;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+/*# sourceMappingURL=style.css.map */

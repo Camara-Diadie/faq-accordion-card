@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+html {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  background: white;
+  font-family: "Kumbh Sans", sans-serif;
+  body {
+    width: 375px;
+    height: 1131px;
+    background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+   
+
+    main.main-card {
+      width: 327px;
+      height: 768px;
+      background: white;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .img-card {
+        display: block;
+        position: relative;
+        top: -120px;
+        background: center / contain no-repeat
+          url(/images/illustration-woman-online-mobile.svg);
+        width: 240px;
+        height: 145px;
+        &:after {
+          display: block;
+          position: absolute;
+          content: "";
+          background: center / contain no-repeat
+            url(/images/bg-pattern-mobile.svg);
+          width: 237px;
+          height: 180px;
+          top: 30px;
+        }
+      }
+
+      .text-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 279px;
+        height: auto;
+
+        h1 {
+          margin: 0;
+          width: 67px;
+          height: 32px;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 32.19px;
+        }
+        .accordion {
+          display: flex;
+          flex-direction: column;
+
+          .question-faq {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 279px;
+            height: auto;
+            border-bottom: #e8e8ea 2px solid;
+            p.question {
+              font-weight: 400;
+              font-size: 13px;
+              line-height: 13.08px;
+              color: #4b4c5f;
+            }
+            img {
+              width: 8px;
+              height: 4px;
+            }
+          }
+          p.reponse-faq {
+            width: 279px;
+            height: auto;
+            color: #787887;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+}
