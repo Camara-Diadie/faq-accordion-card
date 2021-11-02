@@ -24,13 +24,6 @@ html body {
   margin: 0;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-  html body {
-    width: 1440px;
-    height: 768px;
-  }
-}
-
 html body main.main-card {
   width: 327px;
   height: -webkit-max-content;
@@ -53,57 +46,17 @@ html body main.main-card {
           justify-content: space-between;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-  html body main.main-card {
-    width: 920px;
-    height: auto;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-}
-
 html body main.main-card .img-card {
-  top: -85px;
-  background: center/contain no-repeat url(/images/illustration-woman-online-mobile.svg);
+  background-image: url(/images/bg-pattern-mobile.svg);
+  background-repeat: no-repeat;
   width: 240px;
   height: 145px;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-  html body main.main-card .img-card {
-    background: center/cover no-repeat url(/images/illustration-woman-online-desktop.svg);
-    width: 472px;
-    height: 359px;
-    left: -84px;
-    top: auto;
-    z-index: 2;
-  }
-}
-
-html body main.main-card .img-card:after {
-  display: block;
-  content: "";
-  background: no-repeat url(/images/bg-pattern-mobile.svg);
-  width: 240px;
-  height: 109px;
-  top: 70px;
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-  html body main.main-card .img-card:after {
-    background: no-repeat url(/images/bg-pattern-desktop.svg);
-    background-size: cover;
-    width: 964px;
-    height: 568px;
-    left: -476px;
-    top: -135px;
-    background-position: center;
-  }
+html body main.main-card .img-card .woman {
+  width: 237px;
+  height: 180px;
+  margin-top: -105px;
 }
 
 html body main.main-card .text-card {
@@ -121,36 +74,16 @@ html body main.main-card .text-card {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 279px;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-  html body main.main-card .text-card {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-    margin-top: 64px;
-  }
+  height: auto;
+  margin-bottom: 40px;
 }
 
 html body main.main-card .text-card h1 {
-  margin: 0;
   width: 67px;
   height: 32px;
   font-weight: 700;
   font-size: 32px;
   line-height: 32.19px;
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-  html body main.main-card .text-card h1 {
-    margin-bottom: 43px;
-  }
 }
 
 html body main.main-card .text-card .accordion {
@@ -161,12 +94,6 @@ html body main.main-card .text-card .accordion {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-  html body main.main-card .text-card .accordion {
-    width: 350px;
-  }
 }
 
 html body main.main-card .text-card .accordion .question-faq {
@@ -184,10 +111,8 @@ html body main.main-card .text-card .accordion .question-faq {
   border-bottom: #e8e8ea 2px solid;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-  html body main.main-card .text-card .accordion .question-faq {
-    width: 350px;
-  }
+html body main.main-card .text-card .accordion .question-faq:hover {
+  cursor: pointer;
 }
 
 html body main.main-card .text-card .accordion .question-faq p.question {
@@ -195,6 +120,15 @@ html body main.main-card .text-card .accordion .question-faq p.question {
   font-size: 13px;
   line-height: 13.08px;
   color: #4b4c5f;
+}
+
+html body main.main-card .text-card .accordion .question-faq p.question:hover {
+  color: red;
+  font-weight: 700;
+}
+
+html body main.main-card .text-card .accordion .question-faq p.question:before {
+  font-weight: 700;
 }
 
 html body main.main-card .text-card .accordion .question-faq img {
@@ -209,5 +143,6 @@ html body main.main-card .text-card .accordion p.reponse-faq {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
