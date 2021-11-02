@@ -24,6 +24,18 @@ html body {
   margin: 0;
 }
 
+@media only screen and (min-width: 768px) {
+  html body {
+    width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  html body {
+    width: 1024px;
+  }
+}
+
 html body main.main-card {
   width: 327px;
   height: -webkit-max-content;
@@ -47,7 +59,7 @@ html body main.main-card {
 }
 
 html body main.main-card .img-card {
-  background-image: url(images/bg-pattern-mobile.svg);
+  background-image: url(/images/bg-pattern-mobile.svg);
   background-repeat: no-repeat;
   width: 240px;
   height: 145px;
