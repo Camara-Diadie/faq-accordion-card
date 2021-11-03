@@ -24,23 +24,26 @@ html body {
   margin: 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   html body {
-    width: 768px;
+    width: auto;
+    min-width: 768px;
+    height: 1024px;
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   html body {
-    width: 1024px;
+    width: 1440px;
+    min-height: 768px;
+    max-height: auto;
   }
 }
 
 html body main.main-card {
   width: 327px;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: auto;
+  min-height: 535px;
   background: white;
   border-radius: 20px;
   display: -webkit-box;
@@ -53,9 +56,20 @@ html body main.main-card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  html body main.main-card {
+    width: 920px;
+    height: auto;
+    min-height: 509px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 html body main.main-card .img-card {
@@ -63,15 +77,54 @@ html body main.main-card .img-card {
   background-repeat: no-repeat;
   width: 240px;
   height: 145px;
+  margin-top: 0px;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  html body main.main-card .img-card {
+    background-image: url(/images/bg-pattern-desktop.svg);
+    background-size: contain;
+    width: 964px;
+    height: 568px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    margin: 0;
+  }
 }
 
 html body main.main-card .img-card .woman {
   width: 237px;
   height: 180px;
-  margin-top: -105px;
+  margin-top: -110px;
 }
 
-html body main.main-card .text-card {
+@media only screen and (min-width: 1024px) {
+  html body main.main-card .img-card .woman {
+    display: none;
+  }
+}
+
+html body main.main-card .img-card .woman-desktop {
+  display: none;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  html body main.main-card .img-card .woman-desktop {
+    display: block;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 472px;
+    height: 359px;
+    left: 106px;
+    top: 80px;
+    z-index: 1;
+  }
+}
+
+html body .text-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,15 +135,20 @@ html body main.main-card .text-card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 279px;
-  height: auto;
-  margin-bottom: 40px;
+  height: 355px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-html body main.main-card .text-card h1 {
+@media (min-width: 1024px) and (max-width: 1440px) {
+  html body .text-card {
+    margin-left: 475px;
+    width: 350px;
+  }
+}
+
+html body .text-card h1 {
   width: 67px;
   height: 32px;
   font-weight: 700;
@@ -98,7 +156,14 @@ html body main.main-card .text-card h1 {
   line-height: 32.19px;
 }
 
-html body main.main-card .text-card .accordion {
+@media only screen and (min-width: 1024px) {
+  html body .text-card h1 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+html body .text-card .accordion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,7 +173,7 @@ html body main.main-card .text-card .accordion {
           flex-direction: column;
 }
 
-html body main.main-card .text-card .accordion .question-faq {
+html body .text-card .accordion .question-faq {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,32 +188,34 @@ html body main.main-card .text-card .accordion .question-faq {
   border-bottom: #e8e8ea 2px solid;
 }
 
-html body main.main-card .text-card .accordion .question-faq:hover {
+@media only screen and (min-width: 1024px) {
+  html body .text-card .accordion .question-faq {
+    width: 350px;
+    height: 35px;
+  }
+}
+
+html body .text-card .accordion .question-faq:hover {
   cursor: pointer;
 }
 
-html body main.main-card .text-card .accordion .question-faq p.question {
+html body .text-card .accordion .question-faq p.question {
   font-weight: 400;
   font-size: 13px;
   line-height: 13.08px;
   color: #4b4c5f;
 }
 
-html body main.main-card .text-card .accordion .question-faq p.question:hover {
+html body .text-card .accordion .question-faq p.question:hover {
   color: red;
-  font-weight: 700;
 }
 
-html body main.main-card .text-card .accordion .question-faq p.question:before {
-  font-weight: 700;
-}
-
-html body main.main-card .text-card .accordion .question-faq img {
+html body .text-card .accordion .question-faq img {
   width: 8px;
   height: 4px;
 }
 
-html body main.main-card .text-card .accordion p.reponse-faq {
+html body .text-card .accordion p.reponse-faq {
   width: 279px;
   height: auto;
   color: #787887;
