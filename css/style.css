@@ -156,7 +156,7 @@ html body .text-card h1 {
   line-height: 32.19px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   html body .text-card h1 {
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -188,7 +188,7 @@ html body .text-card .accordion .question-faq {
   border-bottom: #e8e8ea 2px solid;
 }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   html body .text-card .accordion .question-faq {
     width: 350px;
     height: 35px;

@@ -103,7 +103,7 @@ html {
         font-weight: 700;
         font-size: 32px;
         line-height: 32.19px;
-        @media only screen and (min-width: 1024px) {
+        @media (min-width: 1024px) and (max-width: 1440px) {
           align-self: flex-start;
         }
       }
@@ -118,7 +118,7 @@ html {
           width: 279px;
           height: auto;
           border-bottom: #e8e8ea 2px solid;
-          @media only screen and (min-width: 1024px) {
+          @media (min-width: 1024px) and (max-width: 1440px) {
             width: 350px;
             height: 35px;
           }
